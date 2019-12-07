@@ -64,8 +64,8 @@ module.exports = {
               exclude: /node_modules/,
               options: {
                   presets: [
-                      ["env", {"modules": false}],
-                      "react",
+                      ["@babel/preset-env", {"modules": false}],
+                      "@babel/preset-react",
                   ],
                   plugins: [
                     "react-hot-loader/babel",
