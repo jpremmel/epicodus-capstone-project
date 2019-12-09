@@ -11,13 +11,15 @@ function App() {
   return(
     <div>
       <Navbar/>
-      <Switch>
-        <Route exact path='/' render={() => <HomePage /> } />
-        <Route path='/create-account' render={() => <CreateAcctPage /> } />
-        <Route path='/login' render={() => <LoginPage /> } />
-        <Route path='/profile' render={() => <ProfilePage /> } />
-        <Route path='/browse' render={() => <BrowsePage /> } />
-      </Switch>
+      <div className='container'>
+        <Switch>
+          <Route exact path='/' render={() => <HomePage /> } />
+          <Route path='/create-account' render={() => <CreateAcctPage /> } />
+          <Route path='/login' render={() => <LoginPage /> } />
+          <Route path='/profile' render={() => <ProfilePage /> } />
+          <Route path='/browse' render={() => <BrowsePage /> } />
+        </Switch>
+      </div>
     </div>
   );
 }
